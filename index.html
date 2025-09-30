@@ -1,86 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reproductor de Música</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/assets/font-web/css/all.min.css">
     <script type="module" src="./main.js"></script>
 </head>
 <body>
-    <div class="app-container">
-        <main class="main-content">
-            <aside class="sidebar">
-                <h2>Fila de reproducción</h2>
-                <ul class="playlist">
-                    <li>
-                        <img src="https://picsum.photos/id/101/40" alt="Cover">
-                        <div class="song-info">
-                            <p class="title">Pantomime</p>
-                            <p class="artist">Imagine Dragons</p>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <img src="https://picsum.photos/id/102/40" alt="Cover">
-                        <div class="song-info">
-                            <p class="title">La diferencia</p>
-                            <p class="artist">Enjambre</p>
-                        </div>
-                    </li>
-                     <li>
-                        <img src="https://picsum.photos/id/103/40" alt="Cover">
-                        <div class="song-info">
-                            <p class="title">Lobo cordero</p>
-                            <p class="artist">Odisseo</p>
-                        </div>
-                    </li>
-                </ul>
-            </aside>
+    <div class="container">
+        <div class="music-player">
+            <nav id="mobile-nav">
+                <div class="circle">
+                    <span>back</span>
+                </div>
+                <div class="circle">
+                    <span>bars</span>
+                </div>
+            </nav>
 
-            <section class="main-view">
-                <div class="search-bar">
-                    <i class="fa-solid fa-search"></i>
-                    <input type="text" placeholder="Buscar canción...">
+            <nav id="desktop-nav">
+                <input type="text" name="" id="search-bar">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </nav>
+
+            <div id="main-content">
+                <div id="song-details">
+                    <img src="./media/default_img.jpg" alt="" id="song-img">
+                    <h1 id="title"></h1>
+                    <h3 id="artist"></h3>
                 </div>
 
-                <div class="song-display">
-                    <img src="./media/default_img.jpg" alt="Carátula de la canción" id="song-img">
-                    <h1 id="title">Canción Desconocida</h1>
-                    <h3 id="artist">Artista Desconocido</h3>
+                <div id="playlist">
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <img src="https://picsum.photos/100" class="image-song-card">
+                        <div class="song-card-info">
+                            <h3 class="title-song-card">CANCION 1</h3>
+                            <p class="artist-song-card">ARTISTA 1</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-
-        <footer class="player-bar">
-            <audio id="media" hidden></audio>
-
-            <div class="current-song-info">
-                 <img src="./media/default_img.jpg" alt="Miniatura" id="player-bar-img">
-                 <div class="song-details">
-                     <p id="player-bar-title">Selecciona una canción</p>
-                     <p id="player-bar-artist">...</p>
-                 </div>
             </div>
 
-            <div class="player-controls">
-                <div class="buttons">
-                    <span id="shuffle"><i class="fa-solid fa-shuffle"></i></span>
-                    <span id="lastest"><i class="fa-solid fa-backward-step"></i></span>
-                    <span id="play" class="play-btn"><i class="fa-solid fa-play"></i></span>
-                    <span id="forward"><i class="fa-solid fa-forward-step"></i></span>
-                    <span id="repeat"><i class="fa-solid fa-repeat"></i></span>
-                </div>
-                <div class="progress-container">
+            <div id="music-controls-layer">
+                <div class="audio">
+                    <audio controls id="media" hidden>
+                        <!--<source id="audio" src="" type="audio/mpeg">-->
+                    </audio>
                     <input type="range" value="0" id="progress">
                 </div>
+
+                <div class="song-controls">
+                    <span id="lastest">last</span>
+                    <span id="play" class="play">play</span>
+                    <span id="forward">forward</span>
+                </div>
             </div>
 
-            <div class="volume-controls">
-                <i class="fa-solid fa-volume-high"></i>
-                <input type="range" id="volume" value="100">
-            </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
