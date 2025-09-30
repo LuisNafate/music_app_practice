@@ -1,3 +1,7 @@
 export default function (max){
-    return Math.floor(Math.random() * (max))
+    if(max !== 1){
+        return Math.floor(Math.random() * (max))
+    }
+    
+    return 0;
 }
